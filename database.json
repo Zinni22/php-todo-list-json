@@ -1,7 +1,7 @@
 [
     {
         "todo": "HTML",
-        "done": true
+        "done": false
     },
     {
         "todo": "CSS",
@@ -9,11 +9,11 @@
     },
     {
         "todo": "Responsive",
-        "done": true
+        "done": false
     },
     {
         "todo": "JavaScript",
-        "done": true
+        "done": false
     },
     {
         "todo": "PHP",

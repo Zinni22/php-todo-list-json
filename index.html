@@ -31,7 +31,9 @@
                 <div class="list-container">
 
                     <ul>
-                        <li v-for="todo in toDoList">
+                        <li v-for="todo in toDoList"
+                        :class="todo.done == true ? ' ' : 'done' "
+                        >
                             {{todo.todo}}
 
                             <button>

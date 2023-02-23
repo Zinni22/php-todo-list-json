@@ -47,6 +47,12 @@ ul > li > button{
     border: none;
     cursor: pointer;
 }
+.true{
+    text-decoration: none;
+}
+.done{
+    text-decoration: line-through;
+}
 
 /* Form */
 form{
