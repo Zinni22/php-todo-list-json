@@ -8,11 +8,12 @@
 /* MAIN */
 main{
     background-color: #001632;
-    height: 100vh;
+    padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 h1{
     color: #6d767d;
     font-weight: 300;
@@ -46,9 +47,6 @@ ul > li > button{
     border-radius: 3px;
     border: none;
     cursor: pointer;
-}
-.true{
-    text-decoration: none;
 }
 .done{
     text-decoration: line-through;

@@ -24,7 +24,7 @@
 
         <main>
 
-            <div>
+            <div class="background">
 
                 <h1>Todo List</h1>
 
@@ -32,7 +32,7 @@
 
                     <ul>
                         <li v-for="todo in toDoList"
-                        :class="todo.done == true ? ' ' : 'done' "
+                        :class="todo.done == false ? ' ' : 'done' "
                         >
                             {{todo.todo}}
 
@@ -44,14 +44,18 @@
 
                 </div>
 
-                <form action="" method="GET">
+                <form action="create.php" method="POST" @submit.prevent="addTask()">
                     <input 
                     type="text" 
                     placeholder="Inserisci un elemento..."
-                    name="activity"
+                    name="add_task"
+                    minlenght="1"
+                    maxlenght="64"
+                    v-model="newTask.todo"
+                    required
                     >
 
-                    <button>
+                    <button type="submit">
                         Inserisci
                     </button>
                 </form>
